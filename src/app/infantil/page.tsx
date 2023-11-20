@@ -1,13 +1,13 @@
 "use client"
 
 import { Footer } from "@/components/Footer";
-import { MainMasc } from "@/components/MainMasc";
+import { MainInf } from "@/components/MainInf";
 
 const Page = () => {
 
   return (
     <div>
-      <MainMasc />
+      <MainInf />
       <Footer />
     </div>
   )
