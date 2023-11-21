@@ -18,7 +18,7 @@ export const Sneaker = ({ photo, onClick }: Props) => {
             <img 
             src={`/images/${photo.url}`} 
             alt="Tênis Nike" 
-            className="w-[200px] h-36"
+            className="w-[210px] h-36"
             />
             <div className="text-sm text-center">
                 <div>{photo.label}</div>

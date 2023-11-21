@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { ReactNode } from 'react'
 import './globals.css'
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Nike - Jordan',
@@ -21,6 +22,7 @@ const Layout = ({ children }: Props) => {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
