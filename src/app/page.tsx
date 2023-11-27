@@ -24,7 +24,7 @@ const Page = () => {
 
   return (
     <>
-      <main className="max-w-[1000px] flex justify-start flex-wrap gap-20 mx-auto py-4">
+      <main className="max-w-[1000px] flex justify-start flex-wrap gap-20 mx-auto pt-28 pb-16">
         {sneakersMascList.map(item => (
           <div className="mx-auto">
             <Sneaker key={item.id} photo={item} onClick={() => openModal(item.id)} />

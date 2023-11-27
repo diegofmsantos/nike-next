@@ -1,8 +1,8 @@
 import { Sneakers } from "@/types/Sneakers"
-import { Kdam_Thmor_Pro } from 'next/font/google'
+import { Hepta_Slab } from 'next/font/google'
 
-const kdamThmorPro = Kdam_Thmor_Pro({
-    weight: '400',
+const heptaSlab = Hepta_Slab({
+    weight: '500',
     subsets: ['latin']
 })
 
@@ -14,7 +14,7 @@ type Props = {
 export const Sneaker = ({ photo, onClick }: Props) => {
 
     return (
-        <div onClick={onClick} className={`cursor-pointer ${kdamThmorPro.className}`}>
+        <div onClick={onClick} className={`cursor-pointer ${heptaSlab.className}`}>
             <img 
             src={`/images/${photo.url}`} 
             alt="Tênis Nike" 

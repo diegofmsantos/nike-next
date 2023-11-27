@@ -1,10 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Hepta_Slab } from "next/font/google";
+
+const heptaSlab = Hepta_Slab({
+    weight: '500',
+    subsets: ['latin']
+})
+
 
 export const Header = () => {
 
     return (
-        <header className="bg-gray-950 h-20 items-center flex justify-around px-2">
+        <header className={`bg-[#111] h-20 items-center flex justify-around px-2 ${heptaSlab.className}  fixed w-full`}>
             <div className="flex items-center">
                 <Image src="/images/logo-air-jordan.png" alt="Logo Nike" width={80} height={80} />
                 
